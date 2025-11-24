@@ -1,0 +1,55 @@
+======================================================================
+CIFAR-10 Model evalutaion - of all models
+======================================================================
+
+2.Loading test data
+Loaded 1000 test samples
+
+3.Evaluating Naive Bayes models:
+Custom Naive Bayes
+Sklearn Naive Bayes
+
+4.Evaluating Decision Tree models:
+Custom DT (depth=5)
+Custom DT (depth=10)
+Custom DT (depth=20)
+Custom DT (depth=30)
+Custom DT (depth=50)
+Sklearn DT (depth=50)
+
+5.Evaluating MLP models:
+Base MLP (3 layers, h=512)
+Shallow MLP (2 layers)
+Deep MLP (4 layers)
+Small MLP (h=256)
+Large MLP (h=1024)
+
+6.Evaluating VGG11 CNN models:
+Base VGG11 (8 conv, 3x3)
+Shallow VGG (6 conv)
+VGG Large Kernel (5x5)
+
+======================================================================
+Final results - of all models
+======================================================================
+
+Model                                    Accuracy     Precision    Recall       F1-Score
+----------------------------------------------------------------------------------------
+Custom Naive Bayes                       0.7940       0.7985       0.7940       0.7944
+Sklearn Naive Bayes                      0.7940       0.7985       0.7940       0.7944
+Custom DT (depth=5)                      0.5490       0.5626       0.5490       0.5416
+Custom DT (depth=10)                     0.6030       0.6141       0.6030       0.6063
+Custom DT (depth=20)                     0.5850       0.5853       0.5850       0.5845
+Custom DT (depth=30)                     0.5850       0.5853       0.5850       0.5845
+Custom DT (depth=50)                     0.5850       0.5853       0.5850       0.5845
+Sklearn DT (depth=50)                    0.5830       0.5852       0.5830       0.5829
+Base MLP (3 layers, h=512)               0.8110       0.8132       0.8110       0.8113
+Shallow MLP (2 layers)                   0.8310       0.8320       0.8310       0.8308
+Deep MLP (4 layers)                      0.8060       0.8084       0.8060       0.8061
+Small MLP (h=256)                        0.8170       0.8207       0.8170       0.8176
+Large MLP (h=1024)                       0.8300       0.8320       0.8300       0.8299
+Base VGG11 (8 conv, 3x3)                 0.5950       0.6389       0.5950       0.5960
+Shallow VGG (6 conv)                     0.6200       0.6399       0.6200       0.6143
+VGG Large Kernel (5x5)                   0.6010       0.6083       0.6010       0.5938
+
+Evaluated 16 models
