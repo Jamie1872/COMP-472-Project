@@ -24,7 +24,7 @@ The main Jupyter notebook (`Trained Models.ipynb`) contains:
 
 **You can view all results directly in the notebook without running any code**
 
-## To run code  (Run Evaluation Script)**
+## To run code  (Run evaluate_all_models.py)
 
 To independently verify the reported results using the saved models:
 
