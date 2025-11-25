@@ -12,6 +12,8 @@ This project implements and compares four different AI/ML models for image class
 
 **Total Models Trained:** 16 variants across 4 model types
 
+See `Report.pdf` for detailed analysis.
+
 ## Development Environment
 
 ### **All code was developed in Google Colab**
@@ -52,9 +54,29 @@ python evaluate_all_models.py
 - Prints accuracy, precision, recall, and F1-score for each model
 - **Runtime: ~10-30 seconds** (no training, just evaluation)
 
-**Important:** The evaluation script uses the saved models that were originally trained in the Colab notebook. It does NOT retrain models - it simply loads them and verifies the reported metrics.
+**The evaluation script uses the saved models that were originally trained in the Colab notebook. It does NOT retrain models - it simply loads them and verifies the reported metrics.** 
 
-See `Report.pdf` for detailed analysis.
+## Important: Large File Notice
+
+**The following files exceed GitHub's 100MB limit and are managed using Git LFS:**
+
+- `CNN/vgg11_base.pth` (107 MB)
+- `CNN/vgg_shallow.pth` (113 MB)
+- `CNN/vgg_large_kernel.pth` (108 MB)
+
+### **How to Download:**
+
+**Option 1: Using Git LFS (Recommended)**
+```bash
+git lfs install
+git clone [your-repo-url]
+# Files will download automatically
+```
+
+**Option 2: Manual Download (if Git LFS is not installed)**
+1. Navigate to each large file in the GitHub repository
+2. Click on the file → "Download" button
+3. Place downloaded files in the `CNN/` folder (see Project Structure below)
 
 ```
 project/
@@ -101,8 +123,9 @@ project/
 ## File Descriptions
 
 ### **Main Files:**
-- `cifar10_image_classification.ipynb` - Complete training notebook with all outputs
+- `Trained Models.ipynb` - Complete training notebook with all outputs
 - `evaluate_all_models.py` - Standalone evaluation script
+- - `evaluate_all_models_output.py` - Output of evaluation script
 - `cifar10_features.pkl` - Pre-processed dataset (ResNet-18 features + original images)
 - `Report.pdf` - Detailed project report with analysis
 
