@@ -54,7 +54,45 @@ python evaluate_all_models.py
 
 **Important:** The evaluation script uses the saved models that were originally trained in the Colab notebook. It does NOT retrain models - it simply loads them and verifies the reported metrics.
 
-See `report.pdf` for detailed analysis.
+See `Report.pdf` for detailed analysis.
+
+project/
+│
+├── Trained Models.ipynb # Main Colab notebook (all training code + outputs)
+├── evaluate_all_models.py # Quick evaluation script for graders
+├── cifar10_features.pkl # Preprocessed data (features + images)
+├── expected output.txt # expected output of evaluate_all_models.py
+│
+├── Naive Bayes/
+│ ├── naive_bayes_custom.pkl
+│ ├── naive_bayes_sklearn.pkl
+│ └── confusion_matrix_*.png
+│
+├── Decision Tree/
+│ ├── decision_tree_custom_depth5.pkl
+│ ├── decision_tree_custom_depth10.pkl
+│ ├── decision_tree_custom_depth20.pkl
+│ ├── decision_tree_custom_depth30.pkl
+│ ├── decision_tree_custom_depth50.pkl
+│ ├── decision_tree_sklearn_depth50.pkl
+│ └── confusion_matrix_*.png
+│
+├── MLP/
+│ ├── mlp_base.pth
+│ ├── mlp_shallow.pth
+│ ├── mlp_deep.pth
+│ ├── mlp_small.pth
+│ ├── mlp_large.pth
+│ └── confusion_matrix_*.png
+│
+├── VGG11/
+│ ├── vgg11_base.pth
+│ ├── vgg_shallow.pth
+│ ├── vgg_large_kernel.pth
+│ └── confusion_matrix_*.png
+│
+├── README.md # This file
+└── Report.pdf # Project report
 
 ## File Descriptions
 
