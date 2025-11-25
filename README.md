@@ -56,6 +56,7 @@ python evaluate_all_models.py
 
 See `Report.pdf` for detailed analysis.
 
+```
 project/
 │
 ├── Trained Models.ipynb # Main Colab notebook (all training code + outputs)
@@ -64,35 +65,38 @@ project/
 ├── cifar10_features_output.txt # expected output of evaluate_all_models.py
 │
 ├── Naive Bayes/
-│ ├── naive_bayes_custom.pkl
-│ ├── naive_bayes_sklearn.pkl
-│ └── confusion_matrix_*.png
+│   ├── naive_bayes_custom.pkl
+│   ├── naive_bayes_sklearn.pkl
+│   └── confusion_matrix_*.png
 │
 ├── Decision Tree/
-│ ├── decision_tree_custom_depth5.pkl
-│ ├── decision_tree_custom_depth10.pkl
-│ ├── decision_tree_custom_depth20.pkl
-│ ├── decision_tree_custom_depth30.pkl
-│ ├── decision_tree_custom_depth50.pkl
-│ ├── decision_tree_sklearn_depth50.pkl
-│ └── confusion_matrix_*.png
+│   ├── decision_tree_custom_depth5.pkl
+│   ├── decision_tree_custom_depth10.pkl
+│   ├── decision_tree_custom_depth20.pkl
+│   ├── decision_tree_custom_depth30.pkl
+│   ├── decision_tree_custom_depth50.pkl
+│   ├── decision_tree_sklearn_depth50.pkl
+│   └── confusion_matrix_*.png
 │
 ├── MLP/
-│ ├── mlp_base.pth
-│ ├── mlp_shallow.pth
-│ ├── mlp_deep.pth
-│ ├── mlp_small.pth
-│ ├── mlp_large.pth
-│ └── confusion_matrix_*.png
+│   ├── mlp_base.pth
+│   ├── mlp_shallow.pth
+│   ├── mlp_deep.pth
+│   ├── mlp_small.pth
+│   ├── mlp_large.pth
+│   └── confusion_matrix_*.png
 │
 ├── VGG11/
-│ ├── vgg11_base.pth
-│ ├── vgg_shallow.pth
-│ ├── vgg_large_kernel.pth
-│ └── confusion_matrix_*.png
+│   ├── vgg11_base.pth
+│   ├── vgg_shallow.pth
+│   ├── vgg_large_kernel.pth
+│   └── confusion_matrix_*.png
 │
-├── README.md # This file
-└── Report.pdf # Project report
+├── README.md                              # This file
+└── Report.pdf                             # Project report
+```
+
+---
 
 ## File Descriptions
 
@@ -111,4 +115,4 @@ project/
 
 - **CIFAR-10 Dataset:** https://docs.pytorch.org/vision/main/generated/torchvision.datasets.CIFAR10.html
 
-**Last Updated:** 2025-11-23
+**Last Updated:** 2025-11-24
