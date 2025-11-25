@@ -61,7 +61,7 @@ project/
 ├── Trained Models.ipynb # Main Colab notebook (all training code + outputs)
 ├── evaluate_all_models.py # Quick evaluation script for graders
 ├── cifar10_features.pkl # Preprocessed data (features + images)
-├── expected output.txt # expected output of evaluate_all_models.py
+├── cifar10_features_output.txt # expected output of evaluate_all_models.py
 │
 ├── Naive Bayes/
 │ ├── naive_bayes_custom.pkl
@@ -100,7 +100,7 @@ project/
 - `cifar10_image_classification.ipynb` - Complete training notebook with all outputs
 - `evaluate_all_models.py` - Standalone evaluation script
 - `cifar10_features.pkl` - Pre-processed dataset (ResNet-18 features + original images)
-- `report.pdf` - Detailed project report with analysis
+- `Report.pdf` - Detailed project report with analysis
 
 ### **Model Files:**
 - `.pkl` files - Saved scikit-learn models and custom Python models
