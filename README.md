@@ -62,7 +62,7 @@ project/
 ├── Trained Models.ipynb # Main Colab notebook (all training code + outputs)
 ├── evaluate_all_models.py # Quick evaluation script for graders
 ├── cifar10_features.pkl # Preprocessed data (features + images)
-├── cifar10_features_output.txt # expected output of evaluate_all_models.py
+├── evaluate_all_models_output.txt # expected output of evaluate_all_models.py
 │
 ├── Naive Bayes/
 │   ├── naive_bayes_custom.pkl
